@@ -141,3 +141,8 @@ vcs = "git"
 style = "pep440"
 bump = true
 fallback-version = "0.0.0"
+
+[[tool.uv.index]]
+name = "codeartifact"
+url = "https://trialspark-622627819221.d.codeartifact.us-east-1.amazonaws.com/pypi/dist/simple/"
+publish-url = "https://trialspark-622627819221.d.codeartifact.us-east-1.amazonaws.com/pypi/dist/"
