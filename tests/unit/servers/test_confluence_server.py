@@ -142,7 +142,7 @@ def test_confluence_mcp(mock_confluence_fetcher, mock_base_confluence_config):
 
     test_mcp = AtlassianMCP(
         "TestConfluence",
-        description="Test Confluence MCP Server",
+        instructions="Test Confluence MCP Server",
         lifespan=test_lifespan,
     )
 
@@ -197,7 +197,7 @@ def no_fetcher_test_confluence_mcp(mock_base_confluence_config):
 
     test_mcp = AtlassianMCP(
         "NoFetcherTestConfluence",
-        description="No Fetcher Test Confluence MCP Server",
+        instructions="No Fetcher Test Confluence MCP Server",
         lifespan=no_fetcher_test_lifespan,
     )
 
