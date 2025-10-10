@@ -10,7 +10,7 @@ dependencies = [
     "beautifulsoup4>=4.12.3",
     "httpx>=0.28.0",
     "mcp>=1.8.0,<2.0.0",
-    "fastmcp>=2.3.4,<2.4.0",
+    "fastmcp>=2.3.4,<3.0.0",
     "python-dotenv>=1.0.1",
     "markdownify>=0.11.6",
     "markdown>=3.7.0",
@@ -142,3 +142,10 @@ vcs = "git"
 style = "pep440"
 bump = true
 fallback-version = "0.0.0"
+
+# This will support pushing the package to a private repo when needed.
+[[tool.uv.index]]
+name = "codeartifact"
+url = "https://trialspark-622627819221.d.codeartifact.us-east-1.amazonaws.com/pypi/dist/simple/"
+publish-url = "https://trialspark-622627819221.d.codeartifact.us-east-1.amazonaws.com/pypi/dist/"
+explicit = true
